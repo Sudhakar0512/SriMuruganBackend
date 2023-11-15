@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
-COPY --from=build /target/SriMuruganServerfinal.jar SriMuruganServerfinal.jar
+COPY --from=build target/sb_srimurugan.jar SriMuruganServerfinal.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","SriMuruganServerfinal.jar"]
