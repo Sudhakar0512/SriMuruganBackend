@@ -21,7 +21,7 @@ public class SriMuruganServerfinalApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**") // Adjust the mapping to match your API endpoints
-                    .allowedOrigins("http://localhost:3000") // Replace with the actual origin of your React app
+                    .allowedOrigins("https://sudhakar0512.github.io") // Replace with the actual origin of your React app
                     .allowedMethods("GET", "POST", "PUT", "DELETE") // Add the HTTP methods you need
                     .allowedHeaders("*"); // You can specify allowed headers or use "*" to allow all
             }
